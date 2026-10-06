@@ -1,0 +1,21 @@
+# Ignore absolutely everything by default
+*
+
+# Allow the Git configuration file
+!.gitignore
+
+# Allow our launcher/recovery scripts
+!start-server.bat
+!start-server.ps1
+!recover-after-crash.bat
+!recover-after-crash.ps1
+
+# Allow temporary hosting lock
+!HOSTING_LOCK.json
+
+# Allow the entire Minecraft world
+!world/
+!world/**
+
+# Never track Minecraft runtime locks
+world/**/session.lock
